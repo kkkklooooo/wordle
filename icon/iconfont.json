@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "924470",
+      "name": "next",
+      "font_class": "next",
+      "unicode": "e917",
+      "unicode_decimal": 59671
+    },
+    {
+      "icon_id": "11968665",
+      "name": "bulb",
+      "font_class": "bulb",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "15188356",
+      "name": "fireworks",
+      "font_class": "fireworks",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "37147576",
+      "name": "close-outlined",
+      "font_class": "close-outlined",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}

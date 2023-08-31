@@ -1,0 +1,212 @@
+.row {
+    display: flex;
+    width: 85%;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+}
+
+.letter {
+    display: flex;
+    width: 1.8cm;
+    height: 1.8cm;
+    background-color: aliceblue;
+    border-radius: 10%;
+    border: 0px;
+    border-style: solid;
+    border-color: aquamarine;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+    /* animation: stress 1s ease-in-out 0s 1 forwards; */
+    /* animation-play-state: paused; */
+}
+
+.PopFrame {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    animation-name: blur;
+    animation-duration: 0.5s;
+    backdrop-filter: blur(5px);
+    animation-timing-function: ease-in;
+    background-color: rgba(212, 255, 214, 0.171);
+}
+
+.PopFrameNoBlur {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    pointer-events: none;
+}
+
+.PopWindow {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: darkgray;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.success-frame {
+    margin: 10px;
+}
+
+.success-text {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.icon {
+    float: left;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.icon-close {
+    float: right;
+}
+
+.icon:hover {
+    border-style: solid;
+    border-radius: 20%;
+    border-color: gainsboro;
+    border-width: 2px;
+    padding: 2px;
+
+}
+
+
+.topbar {
+    height: 5em;
+}
+
+
+@keyframes letters_in {
+    0% {
+        font-size: 0%;
+    }
+
+    100% {
+        font-size: 100%;
+    }
+}
+
+@keyframes stress {
+    0% {
+        /* font-size: 30px; */
+
+    }
+
+    50% {
+        /* font-size: 35px; */
+        border: 1px;
+    }
+
+    100% {
+        /* font-size: 30px; */
+
+    }
+}
+
+@keyframes PopIn {
+    from {
+        transform: scale(.8);
+        opacity: 0
+    }
+
+    40% {
+        transform: scale(1.1);
+        opacity: 1
+    }
+}
+
+@keyframes FlipIn {
+    0% {
+        transform: rotateX(0)
+    }
+
+    100% {
+        transform: rotateX(-90deg)
+    }
+}
+
+@keyframes FlipOut {
+    0% {
+        transform: rotateX(-90deg)
+    }
+
+    100% {
+        transform: rotateX(0)
+    }
+}
+
+@keyframes blur {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.letter[data-anim="in"] {
+    animation-name: PopIn;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+}
+
+.letter[data-anim="fill_in"] {
+    animation-name: FlipIn;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.letter[data-anim="fill_out"] {
+    animation-name: FlipOut;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.PopWindow[data-anim="in"] {
+    animation-name: PopIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.PopWindow[data-anim="out"] {
+    animation-name: PopIn;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.tips-text[data-anim="in"] {
+    animation-name: PopIn;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+}
+
+.tips-text[data-anim="out"] {
+    animation-name: PopIn;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessWord</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <svg class="icon" aria-hidden="true" style="width: 2em; height: 2em; margin-top: 5px;" onclick="tips_func()">
+            <use xlink:href="#icon-bulb"></use>
+        </svg>
+        <h1 class="success-text tips-text"></h1>
+    </div>
+    <!-- <h1 style="display: flex; justify-content: center;" id="length-view"></h1> -->
+    <div id="game" style="display: grid;">
+    </div>
+    <!-- <div class="PopFrame">
+        <div class="PopWindow"></div>
+    </div> -->
+    <div class="PopFrameNoBlur" id="firework"></div>
+</body>
+
+
+
+<link rel="stylesheet" href="main.css">
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script> -->
+
+<script src="./node_modules/fireworks-js/dist/index.umd.js"></script>
+
+<script src="./init_game.js"></script>
+
+<script src="./icon/iconfont.js"></script>
+
+</html>
