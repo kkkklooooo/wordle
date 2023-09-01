@@ -1,4 +1,4 @@
-var words_jsonurl = "./asset/export.json";
+var words_jsonurl = "https://kkkklooooo.github.io/wordle/main/asset/export.json";
 var words_json;
 var main_word;
 var word_translate;
@@ -58,7 +58,7 @@ var firework = new Fireworks.default(container);
 var max_firework = 15;
 
 
-var PopPathurl = "./asset/pop.html";
+var PopPathurl = "https://kkkklooooo.github.io/wordle/main/asset/pop.html";
 
 
 
