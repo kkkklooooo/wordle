@@ -124,6 +124,9 @@ function reset() {
         build_init();
         row_index = 0;
         letter_index = 0;
+        if (tips) {
+            tips_func();
+        }
         //key_event();
         clearTimeout(timer);
     }, 500);
