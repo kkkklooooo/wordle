@@ -10,8 +10,30 @@ var tips_text = document.querySelector(".tips-text");
 AddAnimListener(tips_text);
 
 
+let Keyboard = window.SimpleKeyboard.default;
+
+let keyboard = new Keyboard({
+    //onChange: input => onChange(input),
+    onKeyPress: button => onKeyPress(button)
+});
 
 
+function onKeyPress(button) {
+    switch (button) {
+        case "{bksp}":
+            button = "Backspace"
+            break
+        case "{enter}":
+            button = "Enter"
+            break
+    }
+    console.log(button)
+    var event = new KeyboardEvent('keydown', {
+        key: button
+    });
+
+    document.dispatchEvent(event);
+}
 
 //var words_count = 3933;
 
