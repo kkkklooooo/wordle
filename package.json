@@ -1,0 +1,22 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "Exam_wordle",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/**/*.html src/*.html src/*.js src/**/*.js --no-source-maps ",
+    "start": "parcel run src/**/*.html src/*.html src/*.js src/**/*.js --no-source-maps"
+  },
+  "keywords": [],
+  "author": "kkkklooooo",
+  "license": "ISC",
+  "dependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.31"
+  },
+  "parcel": {
+    "browser": {
+      "sourceMap": false
+    }
+  }
+}

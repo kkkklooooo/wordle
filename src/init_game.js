@@ -230,6 +230,20 @@ function check_word(data, standard, row_index) {
                     wind.innerHTML = PopContent;
                     appendExplain(main_word, word_explain, word_translate);
                     LaunchFireworks();
+                    document.querySelector("#LFWS").addEventListener("click", () => { LaunchFireworks() })
+                    document.querySelector("#RST").addEventListener("click", () => { reset() })
+                }, 1000);
+            }
+            else if (data == "kkkklooooo") {
+                var timeout = setTimeout(() => {
+                    addPop(PopFrame, game_div);
+                    let wind = document.querySelector(".PopWindow");
+                    wind.setAttribute("data-anim", "in");
+                    wind.innerHTML = PopContent;
+                    appendExplain("kkkklooooo", "?????", "!!!!!");
+                    LaunchFireworks();
+                    document.querySelector("#LFWS").addEventListener("click", () => { LaunchFireworks() })
+                    document.querySelector("#RST").addEventListener("click", () => { reset() })
                 }, 1000);
             }
 
@@ -322,7 +336,7 @@ fetch(words_jsonurl).then((response) => {
     key_event();
 })
 
-
+document.querySelector(".icon").addEventListener("click", () => { tips_func() })
 
 
 
